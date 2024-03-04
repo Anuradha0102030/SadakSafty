@@ -1,0 +1,301 @@
+<? php
+session_start();
+echo "$_SESSION['msg1']";
+
+
+ ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50px; 
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    cursor: pointer;
+
+}
+
+.nav-list{
+    width: 7 0%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+.rightNav{
+    padding: 0 23px;
+    width: 30%;
+    text-align: right;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.background{
+    background: rgba(0,0,0,0.7) url(rr.png);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 300px;
+    }
+
+    .form-container h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .form-container button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-container button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50px; 
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    cursor: pointer;
+
+}
+
+.nav-list{
+    width: 7 0%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+.rightNav{
+    padding: 0 23px;
+    width: 30%;
+    text-align: right;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.background{
+    background: rgba(0,0,0,0.7) url(rr.png);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-heading {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .section-content {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #555;
+    }
+  </style>
+  <title>Thnakyou
+  </title>
+</head>
+<body>
+    <nav class="navbar background h-nav">
+        <ul class="nav-list v-class"> 
+          <div class="logo"><img src="slow down.jpg" alt="logo" /></div>
+          <li><a href="home.php">Go Back</a></li>
+        </ul>
+        <div class="rightNav v-class">
+          <input type="text" name="search" id="search" />
+          <button class="btn btn-sm" onclick="window.location.href='home.php'">Search</button>
+        </div>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+      <header>
+        <h1>Road Safety Awareness</h1>
+        <p>Stay safe on the roads for a brighter future!</p>
+      </header>
+    
+      <div class="container">
+        <section class="section">
+          <h2 class="section-heading">Why Road Safety Matters</h2>
+          <p class="section-content">Road safety is of utmost importance as it helps prevent accidents, injuries,
+             and loss of lives. By following traffic rules, maintaining proper vehicle maintenance, and practicing 
+             safe driving habits, we can create a safer environment for everyone on the road.</p>
+        </section>
+      <footer class="background">
+        <p class="text-footer">
+        copyright &copy 2023 www.RoadAware.com . All rights reserved
+        <br>
+      <strong>Developed by Abhishek Yadav</strong>
+        </p>
+      </footer>
+    </body>
+    </html>
+    

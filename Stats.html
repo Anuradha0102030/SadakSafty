@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50px; 
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    cursor: pointer;
+
+}
+
+.nav-list{
+    width: 7 0%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+.rightNav{
+    padding: 0 23px;
+    width: 30%;
+    text-align: right;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.background{
+    background: rgba(0,0,0,0.7) url(rr.png);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th,
+table td {
+  border: 1px solid white;
+  padding: 8px;
+}
+
+table th {
+  text-align: center;
+}
+
+
+table tr:hover {
+  background-color: black;
+}
+
+table td:first-child {
+  font-weight: bold;
+}
+
+
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-heading {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .section-content {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #555;
+    }
+
+</style>
+<title>Information</title>
+</head>
+<body>
+    <nav class="navbar background h-nav">
+        <ul class="nav-list v-class"> 
+          <div class="logo"><img src="C.png" alt="logo" /></div>
+          <li><a href="home.php">Home</a></li>
+          <li><a href="shopping.html">Shop</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+        <div class="rightNav v-class">
+          <input type="text" name="search" id="search" />
+          <button class="btn btn-sm" onclick="window.location.href='https://www.google.com'">Search</button>
+        </div>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+      <header>
+        <h1>Road Safety Awareness</h1>
+        <p>Stay safe on the roads for a brighter future!</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Number of Accidents</th>
+            <th>Number of Fatalities</th>
+            <th>Number of Injuries</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2018</td>
+            <td>464,910</td>
+            <td>151,417</td>
+            <td>469,418</td>
+          </tr>
+          <tr>
+            <td>2019</td>
+            <td>449,002</td>
+            <td>151,113</td>
+            <td>451,361</td>
+          </tr>
+          <tr>
+            <td>2020</td>
+            <td>366,138</td>
+            <td>131,714</td>
+            <td>348,279</td>
+          </tr>
+          <tr>
+            <td>2021</td>
+            <td>412,432</td>
+            <td>153,972</td>
+            <td>384,448</td>
+          </tr>
+          <tr>
+            <td>2022</td>
+            <td>398,554</td>
+            <td>155,622</td>
+            <td>234,932</td>
+          </tr>
+        </tbody>
+      </table>
+      </header>
+    
+      <div class="container">
+        <section class="section">
+          <h2 class="section-heading">Why Road Safety Matters</h2>
+          <p class="section-content">Road safety is of utmost importance as it helps prevent accidents, injuries,
+             and loss of lives. By following traffic rules, maintaining proper vehicle maintenance, and practicing 
+             safe driving habits, we can create a safer environment for everyone on the road.</p>
+        </section>
+        <section class="section">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ntn4SKgpjwY" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture; web-share" allowfullscreen>
+          </iframe>
+        </section>
+    
+        <section class="section">
+          <h2 class="section-heading">Tips for Safe Driving</h2>
+          <p class="section-content">Here are some essential tips for safe driving:<br>
+            1. Always wear your seatbelt<br>
+            2. Observe speed limits<br>
+            3. Avoid distractions such as using your phone while driving<br>
+            4. Maintain a safe distance from the vehicle ahead<br>
+            5. Use turn signals to indicate your intentions<br>
+            6. Observe traffic signs and signals<br>
+            7. Stay focused and alert<br>
+            Remember, safe driving saves lives!</p>
+        </section>
+        <section class="section">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/2GM9snIlUfg" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen></iframe>
+        </section>
+    
+        <section class="section">
+          <h2 class="section-heading">Get Involved</h2>
+          <p class="section-content">You can make a difference by spreading awareness about road safety.
+             Share these tips with your friends and family, participate in road safety campaigns, and always be a
+            responsible road user. Together, we can build a safer and better future!</p>
+        </section>
+    
+        <a href="https://www.nhtsa.gov/road-safety" class="cta-button" >Learn More</a>
+      </div>
+      <footer class="background">
+        <p class="text-footer">
+        copyright &copy 2023 www.RoadAware.com . All rights reserved
+        </p>
+      </footer>
+    </body>
+    </html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .item img {
+      max-width: 200px;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    .item .details {
+      flex-grow: 1;
+    }
+
+    .item h2 {
+      margin: 0;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .item p {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    .item .price {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .item button {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .item button:hover {
+      background-color: #45a049;
+    }
+    .logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50px; 
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    cursor: pointer;
+
+}
+
+.nav-list{
+    width: 7 0%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+.rightNav{
+    padding: 0 23px;
+    width: 30%;
+    text-align: right;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.background{
+    background: rgba(0,0,0,0.7) url(rr.png);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+</style>
+<title>Shop</title>
+</head>
+<body>
+    <nav class="navbar background h-nav">
+        <ul class="nav-list v-class"> 
+          <div class="logo"><img src="C.png" alt="logo" /></div>
+          <li><a href="home.php">Home</a></li>
+          <li><a href="Stats.html">Info</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+        <div class="rightNav v-class">
+          <input type="text" name="search" id="search" />
+          <button class="btn btn-sm" onclick="window.location.href='home.php'">Search</button>
+        </div>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+  <div class="container">
+    <div class="item">
+      <img src="helmet.jpg" alt="Item 1">
+      <div class="details">
+        <h2>Helmet</h2>
+        <p>1 Provides enhanced impact absorption by utilizing varying densities of thermocol <br>
+           2 Allows cooling air to travel unrestricted through tunnels created in the EPS <br>
+           3 Precise placement of multi-density EPS material yields a more compact, lightweight design <br>
+           4 Double D-Ring Fastener <br>
+           5 Cheek Pad also with high density EPS</p>
+        <p class="price"><s>4,274</s>₹3200</p>
+        <button onclick="window.location.href='https://www.amazon.in/s?k=helmet&ref=nb_sb_noss_1'">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="jacket.jpg" alt="Item 2">
+      <div class="details">
+        <h2>NIKAVI Protective Gear Riders Jacket for Motorcycle</h2>
+        <p>Care Instructions: Hand Wash Only <br>
+          Off-road activity armor suit <br>
+          WATERPROOF LINING; Removable waterproof liner. <br>
+          DOUBLE ARMOR SYSTEM; External shoulders and elbows armor attached with the jacket PLUS <br>
+          internal 5PC removable armor in elbows, shoulders and back. <br>
+          ALL SEASON JACKET; Made of Ultra Breathable abrasion resistant light weight poly mesh and Cordura. <br>
+          Please check the size in detailed page before you buy</p>
+        <p class="price"><s>3,703</s>₹2500</p>
+        <button onclick="window.location.href='https://www.amazon.in/s?k=bike+riding+jacket+for+men&ref=nb_sb_noss'">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="glove.jpg" alt="Item 3">
+      <div class="details">
+        <h2>Riding Gloves Race Blue XL</h2>
+        <p>Features Multi fabric construction for protection, breathability and comfort Palm, <br>
+           knuckle & finger protection Touch screen compatible fore finger Mesh Panels for enhanced <br>
+           air flow Accordion construction on fingers for higher flexibility Wrist width adjustment <br>
+           provided with Velcro fastener Attached forefinger rubber visor cleaners to keep your visor <br>
+           crystal clear</p>
+        <p class="price"><s>4,7799</s>₹2,799</p>
+        <button onclick="window.location.href='https://www.amazon.in/s?k=bike+riding+gloves&ref=nb_sb_noss'">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="kneeguard.jpg" alt="Item 4">
+      <div class="details">
+        <h2>Bastion Bionic Motorcycle Sports Riding Knee Guard</h2>
+        <p>PROTECTION - CE Certified Impact Protection: Entire knee guard CE certified to standard EN1621-1:2012 (knee and shin) <br>
+          BIONIC DESIGN - Dual Axis Knee Cap: Anatomically correct, two-axis pivoting design. Syncs with the natural movement of the knee. <br> 
+          FIT - Versatile Applications: Developed for use over or under riding pants. Can be worn with tall ADV or motocross boots. <br>
+          COMFORT - 3D Molded HD Foam Backing: Provides ventilation. Facilitates secure and personalised fit. Further assists in impact protection. </p>
+        <p class="price">₹3,950</p>
+        <button onclick="window.location.href='https://www.amazon.in/s?k=bike+riding+knee+guard&ref=nb_sb_noss'">Buy now</button>
+      </div>
+    </div>
+    </div>
+    <footer class="background">
+      <p class="text-footer">
+      copyright &copy 2023 www.RoadAware.com . All rights reserved
+      <br>
+      <strong> Developed by Abhishek Yadav</strong>
+      </p>
+    </footer>
+    </body>
+    </html>
